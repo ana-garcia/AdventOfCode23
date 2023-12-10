@@ -2,7 +2,7 @@
 using AdventOfCode23.Solutions;
 
 
-var day1 = new Day1Trebuchet();
+var day1 = new Day1();
 
 int solution1 = day1.GetSolution(@"C:\Users\Ana Garcia\Documents\Visual Studio 2022\AdventOfCode23\AdventOfCode23\Inputs\Day1TrebuchetInput.txt", true);
 Console.WriteLine("Day1, Part1: " + solution1);

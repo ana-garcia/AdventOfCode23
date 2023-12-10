@@ -1,9 +1,9 @@
 ﻿using System.Text.RegularExpressions;
 
 namespace AdventOfCode23.Solutions;
-public class Day1Trebuchet
+public class Day1
 {
-    public Day1Trebuchet() { }
+    public Day1() { }
 
     private Dictionary<string, int> SpelledDigitToNumericMapping = new Dictionary<string, int>
     {
