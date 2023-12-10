@@ -39,7 +39,7 @@ public class Day1Trebuchet
         { "enin",   9 },
     };
 
-    public int Part1(string filePath)
+    public int GetSolution(string filePath , bool isPartOne)
     {
         try
         {
@@ -50,31 +50,8 @@ public class Day1Trebuchet
             var line = sr.ReadLine();
             while (line != null)
             {
-                count += GetValuePart1(line);
-                line = sr.ReadLine();
-            }
-            //close the file
-            sr.Close();
-            return count;
-        }
-        catch (Exception e)
-        {
-            Console.WriteLine("Exception: " + e.Message);
-            return -1;
-        }
-    }
-    public int Part2(string filePath)
-    {
-        try
-        {
-            //Pass the file path and file name to the StreamReader constructor
-            StreamReader sr = new StreamReader(filePath);
-            int count = 0;
-
-            var line = sr.ReadLine();
-            while (line != null)
-            {
-                count += GetValuePart2(line);
+                
+                count += isPartOne? GetValuePart1(line): GetValuePart2(line);
                 line = sr.ReadLine();
             }
             //close the file
