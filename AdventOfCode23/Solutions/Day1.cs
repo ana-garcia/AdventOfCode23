@@ -27,16 +27,6 @@ public class Day1
         { "7",  7 },
         { "8",  8 },
         { "9",   9 },
-        { "orez",   0 },
-        { "eno",    1 },
-        { "owt",    2 },
-        { "eerht",  3 },
-        { "ruof",   4 },
-        { "evif",   5 },
-        { "xis",    6 },
-        { "neves",  7 },
-        { "thgie",  8 },
-        { "enin",   9 },
     };
 
     public int GetSolution(string filePath , bool isPartOne)
